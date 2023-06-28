@@ -1,4 +1,5 @@
 /*обнуление*/
+/*Vercel and github pages*/
 *,
 *::before,
 *::after {
@@ -13,13 +14,13 @@ a {
 li {
     list-style: none;
 }
-/*img {
+img {
     max-width:100%;
     object-fit: contain;
     max-height: 100%;
     top: 0;
     left: 0;
-}*/
+}
 body {
     height: 100%;
     line-height: 1;
@@ -39,6 +40,12 @@ body {
     left: 0;
     top: 0;
     z-index: 50;
+}
+/*Позишин абсолют только вне контекста, вне потока (вечно выравнивать) деменшин респонсив на макете моем*/
+@media (max-width: 375px){
+    .header {
+        display: none;
+    }
 }
 .header__container{
     display: flex;
