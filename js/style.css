@@ -1,0 +1,396 @@
+/*обнуление*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*img {
+    max-width:100%;
+    object-fit: contain;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+}*/
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #070707;
+    font-family: Montserrat;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+/*                                  Заголовок                                         */
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container{
+    display: flex;
+    min-height: 88px;
+    align-items: center;
+    max-width: 100%;
+}
+._container {
+    max-width: 1046px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+.menu__item:not(:last-child) {
+    margin: 0px 180px 0px 0px;
+}
+.menu__logo{
+    color: inherit;
+    font-weight: 700;
+    line-height: 22px;
+}
+.menu__link{
+    color: #828282;
+    font-weight: 700;
+    line-height: 22px;
+}
+/*                            Линия под заголовком                              */
+hr {
+    max-width:1046px; 
+    height: 1px; 
+    background:#828282; 
+    border: 1px; 
+    margin: 0px auto;
+}
+/*                                 Главный блок                              */
+.page {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.page__main-block {
+    height: 100%;
+    width: 100%;
+}
+.main-block {
+    max-width: 100%;
+    padding: 88px 0px 0px 0px;
+}
+@media (max-width: 327px) {
+	.main-block {
+		padding: 105px 0px 0px 0px;
+	}
+}
+.main-block__container {
+    max-width: 1046px;
+    margin: 0px auto;
+}
+.main-block__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 188.5px;
+}
+.main-block__name {
+    width: 143px;
+    height: 119px;
+    font-weight: 700;
+    line-height: 58.61px;
+    font-size: 47.34px;
+    color: inherit;
+    white-space: nowrap;
+}
+.main-block__biography {
+    width: 171px;
+    height: 44.06px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.83px;
+    white-space: nowrap;
+}
+.main-block__translate {
+    writing-mode: vertical-lr;
+    width: 20px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+}
+.main_block__translateru {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+    color: #828282;
+}
+.main_block__translateeng {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+    color: #000000;
+}
+/*                                Фото на главной странице                         */
+.mainphoto__designerphoto {
+    width: 100%;
+    display: flex;
+    min-height: 491px;
+}
+.img__designerphoto {
+    width: 1046px;
+    margin: 0px auto;
+    height: 387px;
+}
+/*                                  Блок о дизайнере                                */
+.page__about_me {
+    max-width: 100%;
+    height: 100%;
+    background-color: #F6F6F6;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.about_me {
+    width: 1046px;
+    min-height: 508px;
+}
+.about_me__info {
+    padding: 120px 0px 107px 0px;
+}
+.info__title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42.09px;
+    max-width: 177px;
+    height: 43px;
+    color: #070707;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+}
+.info__text1 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.83px;
+    max-width: 534px;
+    max-height: 218px;
+    color: #070707;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 43px;
+    margin-bottom: 36px;
+}
+.info__text2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.83px;
+    max-width: 445px;
+    max-height: 218px;
+    color: #070707;
+    margin-left: auto;
+    margin-right: auto;
+    height: 43px;
+    margin-bottom: 36px;
+}
+.info__text3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.83px;
+    max-width: 358px;
+    max-height: 218px;
+    color: #070707;
+    margin-left: auto;
+    margin-right: auto;
+    height: 43px;
+}
+/*                              Блок о скиллах                           */
+.page__skills {
+    height: 100%;
+    width: 100%;
+}
+.skills {
+    display: flex;
+    min-height: 610px;
+}
+.skills__container {
+    width: 1046px;
+}
+.skills__title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #070707;
+    display: flex;
+    justify-content: center;
+    margin: 91px 0px 0px 0px;
+}
+.skills__subtitle{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #070707;
+    display: flex;
+    justify-content: center;
+    margin: 69px 0px 0px 0px;
+}
+.skills__body {
+    width: 100%;
+    display: flex;
+	flex-wrap: wrap;
+    margin: 83.5px 0px 0px 0px;
+    justify-content: space-between;
+}
+.skills__icon {
+    text-align: center;
+    padding: 0px 0px 23px 0px;
+}
+.skills__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.33px;
+    text-align: center;
+    color: #828282;
+    padding: 0px 0px 40px 0px;
+}
+.skills__stars {
+    text-align: center;
+    font-size: 26px;
+}
+.stars__grey {
+    color: #E5E5E5;
+}
+.skills__icon__figma {
+    text-align: center;
+    padding: 0px 0px 26.5px 0px;
+}
+.skills__text__figma {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.33px;
+    text-align: center;
+    color: #828282;
+    padding: 0px 0px 54px 0px;
+}
+
+/*                            Портфолио                              */
+.page__portfolio {
+    background-color: #F6F6F6;
+    min-height: 2231px;
+}
+.portfolio__container {
+    text-align: center;
+    height: 2131px;
+}
+.portfolio__header {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #070707;
+    padding: 113px 0px 47px 0px;
+}
+.portfolio__photo {
+    padding: 0px 0px 45px 0px;
+    height: 555px;
+    max-width:100%;
+}
+.portfolio__photo__size {
+    width: 1046px;
+    height: 510px;
+}
+.portfolio__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    text-decoration-line: underline;
+}
+.portfolio__text:not(:last-child) {
+    padding: 0px 0px 99px 0px;
+}
+/*                               Контакты                                    */
+.page__contacts {
+    min-height: 625px;
+}
+.contacts__container {
+    text-align: center;
+    height: 502px;
+}
+.contacts__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+    padding: 114px 0px 20px 0px;
+}
+.contacts__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    padding-bottom: 30px;
+}
+.contacts__button {
+    padding-bottom: 86px;
+    display: flex;
+    justify-content: center;
+}
+.contacts__buttons {
+    width: 180px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #000000;
+}
+.contacts__buttons:hover {
+    background-color: #FFFFFF;
+}
+.contacts__buttons__black{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.contacts__buttons__black:hover {
+    color: #000000;
+}
+
+.contacts__icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 46px;
+}
+.contacts_icons__four:not(:last-child) {
+    padding-right: 61px;
+}
+@media (max-width: 350px) {
+	.contacts_icons__four:not(:last-child) {
+        padding-right: 30px;
+    }
+}
+@media (max-width: 260px) {
+	.contacts_icons__four:not(:last-child) {
+        padding-right: 15px;
+    }
+} 
+.contacts__likeme{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
